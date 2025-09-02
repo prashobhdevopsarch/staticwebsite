@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • TestSite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container flex between center">
+      <a class="logo" href="index.html">TestSite</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p>Use this simple form (non-functional demo) or email <a href="mailto:hello@example.com">hello@example.com</a>.</p>
+    <form class="form" onsubmit="event.preventDefault(); window.fakeSubmit(this);">
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button class="btn primary" type="submit">Send</button>
+      <p id="form-status" class="muted"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container flex between center">
+      <small>© 2025-08-30 TestSite.</small>
+      <a href="sitemap.xml">Sitemap</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
